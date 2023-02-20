@@ -1,6 +1,6 @@
 services:
   gateway:
-    image: gateway
+    image: tinashemk/gateway
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,api-docs
@@ -39,7 +39,7 @@ services:
       - IPC_LOCK
 
   supplychain:
-    image: supplychain
+    image: tinashemk/supplychain
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,api-docs
