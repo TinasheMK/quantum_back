@@ -93,7 +93,7 @@ services:
   jhipster-registry:
     image: jhipster/jhipster-registry:v7.3.0
     volumes:
-      - ./central-server-config:/central-config
+      - https://raw.githubusercontent.com/TinasheMK/quantum_back/main/docker-compose/central-server-config/application.yml:/central-config
     # By default the JHipster Registry runs with the "dev" and "native"
     # Spring profiles.
     # "native" profile means the filesystem is used to store data, see
